@@ -3,7 +3,7 @@
   * Create a User-Defined Bridge
     - `sudo docker network create --driver bridge hw03`
 ### 1. Face Detector
-  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.faces)
+  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.faces): Dockerfile.faces
   * Commands
     * Build a Docker Image
       - `sudo docker build -t facedetector -f Dockerfile.faces .`
@@ -13,7 +13,7 @@
       - `python3 hw3/face_detector.py`
 
 ### 2. MQTT Broker
-  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.mosquitto)
+  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.mosquitto): Dockerfile.mosquitto
   * Commands
     * Build a Docker Image
       - `sudo docker build -t mosquitto -f Dockerfile.mosquitto .`
@@ -23,7 +23,7 @@
       - `/usr/sbin/mosquitto`
 
 ### 3. MQTT Message Forwarder
-  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.forwarder)
+  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.forwarder): Dockerfile.forwarder
   * Commands
     * Build a Docker Image
       - `sudo docker build -t forwarder -f Dockerfile.forwarder .`
@@ -41,7 +41,7 @@
   * Create a User-Defined Bridge
     - `docker network create --driver bridge hw03`
 ### 1. MQTT Broker
-  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.mosquitto)
+  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.mosquitto): Dockerfile.mosquitto
   * Commands
     * Build a Docker Image
       - `docker build -t mosquitto -f Dockerfile.mosquitto .`
@@ -50,7 +50,7 @@
     * Run Mosquitto in the Container
       - `/usr/sbin/mosquitto`
 ### 2. Image Processor/Saver
-  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.faces)
+  * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.faces): Dockerfile.faces
   * Commands
     * Build a Docker Image
       - `docker build -t imagesaver -f Dockerfile.faces .`
