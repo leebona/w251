@@ -1,0 +1,7 @@
+FROM alpine
+
+WORKDIR /tmp
+
+RUN apk update && apk add \
+    mosquitto \
+    mosquitto-clients
