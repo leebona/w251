@@ -55,9 +55,12 @@
     * Build a Docker Image
       - `docker build -t imagesaver -f Dockerfile.faces .`
     * Build a Docker Container
-      - `docker run --privileged --name imagesaver --network hw03 -v "$PWD":/tmp/hw3 -it imagesaver bash`
+      - `docker run --privileged --name imagesaver --network hw03 -v "$PWD":/tmp/hw3 -v /mnt/mybucket:/tmp/hw3/images -it imagesaver bash`
     * Run a Python Script for Face Detection
       - `python3 hw3/image_saver.py`
 
   * Inspect Network
     - `docker network inspect hw03`
+
+### Public Object Storage
+  * [Link](https://hw3-face.s3.us-east.cloud-object-storage.appdomain.cloud): https://hw3-face.s3.us-east.cloud-object-storage.appdomain.cloud

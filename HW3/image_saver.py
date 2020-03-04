@@ -1,7 +1,6 @@
 import numpy as np
 import cv2 as cv
 import paho.mqtt.client as mqtt
-import calendar
 import time
 
 MQTT_HOST="mqtt-broker"
@@ -19,7 +18,8 @@ def on_message(client,userdata, msg):
     msg = msg.payload
     temp = np.frombuffer(msg, dtype='uint8')
     img = cv.imdecode(temp, flags=1)
-    name = "/mnt/mybucket/image-"+str(round(time.time()))
+    name = "/tmp/hw3/images/image-"+str(round(time.time()))
+    print(name)
     cv.imwrite(name, img)
   except:
     print("Unexpected error:", sys.exc_info()[0])
