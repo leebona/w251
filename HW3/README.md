@@ -1,7 +1,7 @@
 # Homework 3
 ## Containers in Jetson
   * Create a User-Defined Bridge
-    - `docker network create --driver bridge hw03`
+    - `sudo docker network create --driver bridge hw03`
 ### 1. Face Detector
   * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.faces)
   * Commands
@@ -44,20 +44,20 @@
   * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.mosquitto)
   * Commands
     * Build a Docker Image
-      - `sudo docker build -t mosquitto -f Dockerfile.mosquitto .`
+      - `docker build -t mosquitto -f Dockerfile.mosquitto .`
     * Build a Docker Container
-      - `sudo docker run --privileged --name mqtt-broker --network hw03 -p 1883:1883 -it mosquitto sh`
+      - `docker run --privileged --name mqtt-broker --network hw03 -p 1883:1883 -it mosquitto sh`
     * Run Mosquitto
       - `/usr/sbin/mosquitto`
 ### 2. Image Processor/Saver
   * [Dockerfile](https://github.com/leebona/w251/tree/master/HW3/Dockerfile.faces)
   * Commands
     * Build a Docker Image
-      - `sudo docker build -t imagesaver -f Dockerfile.faces .`
+      - `docker build -t imagesaver -f Dockerfile.faces .`
     * Build a Docker Container
-      - `sudo docker run --privileged --name imagesaver --network hw03 -v "$PWD":/tmp/hw3 --device=/dev/video1:/dev/video1 --env="DISPLAY" -it facedetector bash`
+      - `docker run --privileged --name imagesaver --network hw03 -v "$PWD":/tmp/hw3 -it imagesaver bash`
     * Run a Python Script for Face Detection
-      - `python3 hw3/face_detector.py`
+      - `python3 hw3/image_saver.py`
 
   * Inspect Network
-    - `sudo docker network inspect hw03`
+    - `docker network inspect hw03`
