@@ -1,7 +1,6 @@
 #import numpy as np
 import paho.mqtt.client as mqtt
 
-#MQTT_HOST="mqtt.eclipse.org"
 LOCAL_MQTT_HOST="mqtt-broker"
 LOCAL_MQTT_PORT=1883
 LOCAL_MQTT_TOPIC="faces"

@@ -25,6 +25,7 @@ time.sleep(1)
 while(True):
   # Capture frame-by-frame
   ret, frame = cap.read()
+  #print(frame.shape) #480, 640, 3
   # We don't use the color information, so might as well save space
   gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
   # face detection and other logic goes here
