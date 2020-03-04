@@ -1,7 +1,7 @@
 # Homework 9
 ## Questions
 ### 1. How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while)
-  - It took about 18 hours to train with 40,000 training steps.
+  - It took about 18 hours to train with 40,000 training steps with 2 nodes and four V-100 GPUs total.
 ### 2. Do you think your model is fully trained? How can you tell?
   - Answer
 ### 3. Were you overfitting?
