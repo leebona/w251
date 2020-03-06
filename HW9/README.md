@@ -27,7 +27,7 @@
 | <img src="./Extra_Images/v100a_gpu.png"> | <img src="./Extra_Images/v100b_gpu.png"> |
 
 ### 5. Did you monitor network traffic (hint: apt install nmon)? Was network the bottleneck?
-  - Answer
+  - There was no network bottleneck based on the nmon as shown below. The below Network I/O was captured at one point in the training. There was a network error information box below the Network I/O, which displayed zero error for both v100a and v100b.
   - Network Monitoring of v100a and v100b
 
 |                   v100a                   |                   v100b                   |
@@ -35,9 +35,9 @@
 | <img src="./Extra_Images/v100a_nmon.png"> | <img src="./Extra_Images/v100b_nmon.png"> |
 
 ### 6. Take a look at the plot of the learning rate and then check the config file. Can you explain this setting?
-  - Answer
+  - It uses a learning rate decay optimizer called Transformer Policy that determines how to decrease the learning rate throughout the training. The parameter "learning_rate" with a value of 2.0 is an initial learning rate, warmup steps are the initial number of training steps during which the learning rate is increased. As seen in the Learning Rate graph below, the learning rate increases until the training step 8,000 (which is the value given to the "warmup_steps" parameter) and then significantly decreases as the normal learning rate decay is applied afterwards. Lastly, "d_model" is model dimensionality.
   - Learning Rate Graph
-<img src="eval_loss.png" height="50%" width="50%">
+<img src="learning_rate.png" height="50%" width="50%">
   - Configuration
 <img src="./Extra_Images/lr_policy.png">
 
