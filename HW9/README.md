@@ -5,9 +5,9 @@
 ### 2. Do you think your model is fully trained? How can you tell?
   - I think the model is almost fully trained if not all because all the graphs including the BLEU Score and the Train Loss graphs are stabilized as shown below; so, I wouldn't expect to see a big change between my model and a fully trained model.
 
-  ![BLEU Score](Eval_BLEU_Score.png)
+  ![BLEU Score](Eval_BLEU_Score.png){:height="50%" width="50%"}
 
-  ![Train Loss](https://github.com/leebona/w251/tree/master/HW9/Extra_Images/train_loss.png)
+  ![Train Loss](/Extra_Images/train_loss.png){:height="50%" width="50%"}
 
 ### 3. Were you overfitting?
   - Answer
