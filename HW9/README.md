@@ -11,7 +11,7 @@
 | <img src="Eval_BLEU_Score.png"> | <img src="./Extra_Images/train_loss.png"> |
 
 ### 3. Were you overfitting?
-  - Comparing the train and validation loss graphs,
+  - Looking the train and validation loss graphs, I do not see a sign of overfitting as both training and validation loss decrease to a point of stability with a minimal gap between the two final loss values.
   - Graphs
 
 |                 Train Loss                | Evaluation(Validation) Loss |
@@ -20,22 +20,29 @@
 
 ### 4. Were your GPUs fully utilized?
   - All of them were fully utilized for the most of the time as shown below. Even when the GPUs were not fully utilized, the utilization rate was quite high with a value of at least around 80%.
+  - GPU Utilization of v100a and v100b
+
+|                   v100a                  |                   v100b                  |
+|:----------------------------------------:|:----------------------------------------:|
+| <img src="./Extra_Images/v100a_gpu.png"> | <img src="./Extra_Images/v100b_gpu.png"> |
+
 ### 5. Did you monitor network traffic (hint: apt install nmon)? Was network the bottleneck?
   - Answer
+
 ### 6. Take a look at the plot of the learning rate and then check the config file. Can you explain this setting?
   - Answer
+
 ### 7. How big was your training set (mb)? How many training lines did it contain?
   - Answer
+
 ### 8. What are the files that a TF checkpoint is comprised of?
   - Answer
+
 ### 9. How big is your resulting model checkpoint (mb)?
   - Answer
+
 ### 10. Remember the definition of a "step". How long did an average step take?
   - Average time per step was 1.625s.
+
 ### 11. How does that correlate with the observed network utilization between nodes?
   - Answer
-
-* Validation loss: 1.6316
-* Eval BLUE score: 0.3644
-* Avg time per step: 1.625s
-* Avg objects per second: 38391.122
