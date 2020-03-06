@@ -35,7 +35,7 @@
 | <img src="./Extra_Images/v100a_nmon.png"> | <img src="./Extra_Images/v100b_nmon.png"> |
 
 ### 6. Take a look at the plot of the learning rate and then check the config file. Can you explain this setting?
-  - It uses a learning rate decay optimizer called Transformer Policy that determines how to decrease the learning rate throughout the training. The parameter "learning_rate" with a value of 2.0 is an initial learning rate, warmup steps are the initial number of training steps during which the learning rate is increased. As seen in the Learning Rate graph below, the learning rate increases until the training step 8,000 (which is the value given to the "warmup_steps" parameter) and then significantly decreases as the normal learning rate decay is applied afterwards. Lastly, "d_model" is model dimensionality.
+  - It uses a learning rate decay optimizer called Transformer Policy that determines how to decrease the learning rate throughout the training. "learning_rate" with a value of 2.0 in the configuration file is an initial learning rate; warmup steps are the initial number of training steps during which the learning rate is increased. As shown in the Learning Rate graph below, the learning rate increases until the training step 8,000 (which is the value given to the "warmup_steps" parameter) and then significantly decreases as the normal learning rate decay is applied afterwards. Lastly, "d_model" is model dimensionality.
   - Learning Rate Graph
 <img src="learning_rate.png" height="50%" width="50%">
   - Configuration
