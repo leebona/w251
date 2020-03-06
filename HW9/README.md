@@ -11,6 +11,10 @@
 |:--------------------------------------------------------:|:------------------------------------------------------------------:|
 | <img src="Eval_BLEU_Score.png" width="40%" height="40%"> | <img src="./Extra_Images/train_loss.png" width="40%" height="40%"> |
 
+|            BLEU Score           |                 Train Loss                |
+|:-------------------------------:|:-----------------------------------------:|
+| <img src="Eval_BLEU_Score.png"> | <img src="./Extra_Images/train_loss.png"> |
+
 ### 3. Were you overfitting?
   - Answer
 ### 4. Were your GPUs fully utilized?
