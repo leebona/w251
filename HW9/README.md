@@ -28,6 +28,11 @@
 
 ### 5. Did you monitor network traffic (hint: apt install nmon)? Was network the bottleneck?
   - Answer
+  - Network Monitoring of v100a and v100b
+
+|                   v100a                   |                   v100b                   |
+|:-----------------------------------------:|:-----------------------------------------:|
+| <img src="./Extra_Images/v100a_nmon.png"> | <img src="./Extra_Images/v100b_nmon.png"> |
 
 ### 6. Take a look at the plot of the learning rate and then check the config file. Can you explain this setting?
   - Answer
