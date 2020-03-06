@@ -4,19 +4,20 @@
   - It took about 18 hours to train with 40,000 training steps with 2 nodes and four V-100 GPUs total.
 ### 2. Do you think your model is fully trained? How can you tell?
   - I think the model is almost fully trained if not all because all the graphs including the BLEU Score and the Train Loss graphs are stabilized as shown below; so, I wouldn't expect to see a big change between my model and a fully trained model.
-
   - Graphs
-
-|                        BLEU Score                        |                            Train Loss                              |
-|:--------------------------------------------------------:|:------------------------------------------------------------------:|
-| <img src="Eval_BLEU_Score.png" width="40%" height="40%"> | <img src="./Extra_Images/train_loss.png" width="40%" height="40%"> |
 
 |            BLEU Score           |                 Train Loss                |
 |:-------------------------------:|:-----------------------------------------:|
 | <img src="Eval_BLEU_Score.png"> | <img src="./Extra_Images/train_loss.png"> |
 
 ### 3. Were you overfitting?
-  - Answer
+  - Comparing the train and validation loss graphs, 
+  - Graphs
+
+|                 Train Loss                |        Evaluation(Validation) Loss       |
+|:-----------------------------------------:|:----------------------------------------:|
+| <img src="./Extra_Images/train_loss.png"> | <img src="./Extra_Images/eval_loss.png"> |
+
 ### 4. Were your GPUs fully utilized?
   - All of them were fully utilized for the most of the time as shown below. Even when the GPUs were not fully utilized, the utilization rate was quite high with a value of at least around 80%.
 ### 5. Did you monitor network traffic (hint: apt install nmon)? Was network the bottleneck?
