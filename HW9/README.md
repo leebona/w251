@@ -7,7 +7,7 @@
 
   ![BLEU Score](Eval_BLEU_Score.png)
 
-  ![Train Loss](https://github.com/leebona/w251/tree/master/HW9/Extra Images/train_loss.png)
+  ![Train Loss](https://github.com/leebona/w251/tree/master/HW9/Extra_Images/train_loss.png)
 
 ### 3. Were you overfitting?
   - Answer
