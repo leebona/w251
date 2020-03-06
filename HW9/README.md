@@ -6,9 +6,10 @@
   - I think the model is almost fully trained if not all because all the graphs including the BLEU Score and the Train Loss graphs are stabilized as shown below; so, I wouldn't expect to see a big change between my model and a fully trained model.
 
   - Graphs
-|                              BLEU Score                             |                              Train Loss                             |
-|:-------------------------------------------------------------------:|:-------------------------------------------------------------------:|
-|       <img src="Eval_BLEU_Score.png" width="50%" height="50%">      |  <img src="./Extra_Images/train_loss.png" width="50%" height="50%"> |
+
+|                        BLEU Score                        |                            Train Loss                              |
+|:--------------------------------------------------------:|:------------------------------------------------------------------:|
+| <img src="Eval_BLEU_Score.png" width="40%" height="40%"> | <img src="./Extra_Images/train_loss.png" width="40%" height="40%"> |
 
 ### 3. Were you overfitting?
   - Answer
