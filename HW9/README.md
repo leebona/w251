@@ -4,8 +4,11 @@
   - It took about 18 hours to train with 40,000 training steps with 2 nodes and four V-100 GPUs total.
 ### 2. Do you think your model is fully trained? How can you tell?
   - I think the model is almost fully trained if not all because all the graphs including the BLEU Score and the Train Loss graphs are stabilized as shown below; so, I wouldn't expect to see a big change between my model and a fully trained model.
+  
   ![BLEU Score](Eval_BLEU_Score.png)
+
   ![Train Loss](Extra Images/train_loss.png)
+
 ### 3. Were you overfitting?
   - Answer
 ### 4. Were your GPUs fully utilized?
