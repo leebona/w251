@@ -7,7 +7,7 @@
 
   - Graphs
   <img src="Eval_BLEU_Score.png" width="50%" height="50%">
-  <img src="/Extra_Images/train_loss.png" width="50%" height="50%">
+  <img src="./Extra_Images/train_loss.png" width="50%" height="50%">
 
 ### 3. Were you overfitting?
   - Answer
