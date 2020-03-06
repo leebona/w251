@@ -11,12 +11,12 @@
 | <img src="Eval_BLEU_Score.png"> | <img src="./Extra_Images/train_loss.png"> |
 
 ### 3. Were you overfitting?
-  - Comparing the train and validation loss graphs, 
+  - Comparing the train and validation loss graphs,
   - Graphs
 
-|                 Train Loss                |        Evaluation(Validation) Loss       |
-|:-----------------------------------------:|:----------------------------------------:|
-| <img src="./Extra_Images/train_loss.png"> | <img src="./Extra_Images/eval_loss.png"> |
+|                 Train Loss                | Evaluation(Validation) Loss |
+|:-----------------------------------------:|:---------------------------:|
+| <img src="./Extra_Images/train_loss.png"> |  <img src="eval_loss.png">  |
 
 ### 4. Were your GPUs fully utilized?
   - All of them were fully utilized for the most of the time as shown below. Even when the GPUs were not fully utilized, the utilization rate was quite high with a value of at least around 80%.
