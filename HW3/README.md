@@ -66,5 +66,10 @@
   * Inspect Network
     - `docker network inspect hw03`
 
+### 3. Object Storage Configuration
+  * `echo "<AccessKeyID>:<SecretAccessKey>" > $HOME/.cos_creds`
+  * `chmod 600 $HOME/.cos_creds`
+  * `sudo s3fs hw3-face /mnt/mybucket -o passwd_file=$HOME/.cos_creds -o sigv2 -o use_path_request_style -o url=https://s3.us-east.cloud-object-storage.appdomain.cloud`
+
 ### Public Object Storage
   * [Link](https://hw3-face.s3.us-east.cloud-object-storage.appdomain.cloud): https://hw3-face.s3.us-east.cloud-object-storage.appdomain.cloud
