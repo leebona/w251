@@ -47,6 +47,8 @@
       - `docker build -t mosquitto -f Dockerfile.mosquitto .`
     * Build a Docker Container
       - `docker run --privileged --name mqtt-broker --network hw03 -p 1883:1883 -it mosquitto sh`
+    * Run an existing Docker Container
+      - `docker exec -it mqtt-broker sh`
     * Run Mosquitto in the Container
       - `/usr/sbin/mosquitto`
 ### 2. Image Processor/Saver
@@ -56,6 +58,8 @@
       - `docker build -t imagesaver -f Dockerfile.faces .`
     * Build a Docker Container
       - `docker run --privileged --name imagesaver --network hw03 -v "$PWD":/tmp/hw3 -v /mnt/mybucket:/tmp/hw3/images -it imagesaver bash`
+    * Run an existing Docker Container
+      - `docker exec -it imagesaver sh`
     * Run a Python Script to Save Image in the Container
       - `python3 hw3/image_saver.py`
 
